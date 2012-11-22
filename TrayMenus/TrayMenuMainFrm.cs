@@ -21,6 +21,9 @@ namespace TrayMenus
         private bool update_ui_ = false;
 
         private bool setting_ = false;
+        private bool hidesetting_ = false;
+        private bool hideloadmenu_ = false;
+        private bool hideexit_ = false;
 
         private static readonly XmlSerializer xs_ =
             new XmlSerializer(typeof(TrayMenu));
@@ -32,10 +35,13 @@ namespace TrayMenus
 
         ContextMenuStrip cmenu = null;
 
-        public TrayMenuMainFrm(string file_name, bool setting)
+        public TrayMenuMainFrm(string file_name, bool setting, bool hidesetting, bool hideloadmenu, bool hideexit)
         {
             setting_ = setting;
             menu_file_name_ = file_name;
+            hidesetting_ = hidesetting;
+            hideloadmenu_ = hideloadmenu;
+            hideexit_ = hideexit;
 
             InitializeComponent();
 
@@ -93,18 +99,31 @@ namespace TrayMenus
 				MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
-			if (cmenu.Items.Count > 0)
+			if (cmenu.Items.Count > 0 && (!hideloadmenu_ || !hideexit_ || !hidesetting_))
             {
                 cmenu.Items.Add(new ToolStripSeparator());
             }
 
-            ToolStripItem item = cmenu.Items.Add("Settings", null, new EventHandler(OnSettings));
-            item.Tag = "SETTINGS_ITEM";
-            item = cmenu.Items.Add("Load Menu...", null, new EventHandler(btnLoad_Click));
-			item.Tag = "LOADMENU_ITEM";
-            cmenu.Items.Add(new ToolStripSeparator());
-            item =  cmenu.Items.Add("Exit", null, new EventHandler(OnExit));
-			item.Tag = "EXIT_ITEM";
+            ToolStripItem item = null;
+
+            if (!hidesetting_)
+            {
+                item = cmenu.Items.Add("Settings", null, new EventHandler(OnSettings));
+                item.Tag = "SETTINGS_ITEM";
+            }
+
+            if (!hideloadmenu_)
+            {
+                item = cmenu.Items.Add("Load Menu...", null, new EventHandler(btnLoad_Click));
+                item.Tag = "LOADMENU_ITEM";
+            }
+
+            if (!hideexit_)
+            {
+                cmenu.Items.Add(new ToolStripSeparator());
+                item = cmenu.Items.Add("Exit", null, new EventHandler(OnExit));
+                item.Tag = "EXIT_ITEM";
+            }
 		}
 		
         private void OnExit(object sender, EventArgs e)
@@ -125,7 +144,10 @@ namespace TrayMenus
 
         private void notifyIcon1_DoubleClick(object sender, EventArgs e)
         {
-            OnSettings(sender, e);
+            if (!hidesetting_)
+            {
+                OnSettings(sender, e);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

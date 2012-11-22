@@ -17,6 +17,9 @@ namespace TrayMenus
 
             string menu_file = null;
             bool setting = false;
+            bool hidesetting = false;
+            bool hideloadmenu = false;
+            bool hideexit = false;
 
             string[] args = Environment.GetCommandLineArgs();
 
@@ -27,6 +30,18 @@ namespace TrayMenus
                     if (string.Compare("-setting", args[i], true) == 0)
                     {
                         setting = true;
+                    }
+                    if (string.Compare("-hidesetting", args[i], true) == 0)
+                    {
+                        hidesetting = true;
+                    }
+                    if (string.Compare("-hideloadmenu", args[i], true) == 0)
+                    {
+                        hideloadmenu = true;
+                    }
+                    if (string.Compare("-hideexit", args[i], true) == 0)
+                    {
+                        hideexit = true;
                     }
                     else if (string.Compare("-menu", args[i], true) == 0)
                     {
@@ -39,7 +54,7 @@ namespace TrayMenus
                 }
             }
 
-            TrayMenuMainFrm frm = new TrayMenuMainFrm(menu_file, setting);
+            TrayMenuMainFrm frm = new TrayMenuMainFrm(menu_file, setting, hidesetting, hideloadmenu, hideexit);
             frm.Visible = false;
             Application.Run(frm);
         }
