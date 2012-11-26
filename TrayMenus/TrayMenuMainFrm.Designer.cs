@@ -102,7 +102,7 @@ namespace TrayMenus
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(482, 406);
+            this.splitContainer1.Size = new System.Drawing.Size(482, 440);
             this.splitContainer1.SplitterDistance = 160;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -117,7 +117,7 @@ namespace TrayMenus
             treeNode1.Text = "Menu";
             this.tvwMenus.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1});
-            this.tvwMenus.Size = new System.Drawing.Size(160, 300);
+            this.tvwMenus.Size = new System.Drawing.Size(160, 325);
             this.tvwMenus.TabIndex = 0;
             this.tvwMenus.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvwMenus_AfterSelect);
             // 
@@ -125,9 +125,9 @@ namespace TrayMenus
             // 
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 300);
+            this.panel1.Location = new System.Drawing.Point(0, 325);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 106);
+            this.panel1.Size = new System.Drawing.Size(160, 115);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -150,7 +150,7 @@ namespace TrayMenus
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 106);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 115);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // btnAdd
@@ -160,7 +160,7 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.Location = new System.Drawing.Point(3, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(74, 20);
+            this.btnAdd.Size = new System.Drawing.Size(74, 22);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -173,7 +173,7 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemove.Location = new System.Drawing.Point(83, 3);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(74, 20);
+            this.btnRemove.Size = new System.Drawing.Size(74, 22);
             this.btnRemove.TabIndex = 1;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -184,9 +184,9 @@ namespace TrayMenus
             this.btnUp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUp.Location = new System.Drawing.Point(3, 29);
+            this.btnUp.Location = new System.Drawing.Point(3, 31);
             this.btnUp.Name = "btnUp";
-            this.btnUp.Size = new System.Drawing.Size(74, 20);
+            this.btnUp.Size = new System.Drawing.Size(74, 22);
             this.btnUp.TabIndex = 2;
             this.btnUp.Text = "Up";
             this.btnUp.UseVisualStyleBackColor = true;
@@ -197,9 +197,9 @@ namespace TrayMenus
             this.btnDown.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDown.Location = new System.Drawing.Point(83, 29);
+            this.btnDown.Location = new System.Drawing.Point(83, 31);
             this.btnDown.Name = "btnDown";
-            this.btnDown.Size = new System.Drawing.Size(74, 20);
+            this.btnDown.Size = new System.Drawing.Size(74, 22);
             this.btnDown.TabIndex = 3;
             this.btnDown.Text = "Down";
             this.btnDown.UseVisualStyleBackColor = true;
@@ -210,9 +210,9 @@ namespace TrayMenus
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(3, 55);
+            this.btnSave.Location = new System.Drawing.Point(3, 59);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(74, 20);
+            this.btnSave.Size = new System.Drawing.Size(74, 22);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -223,9 +223,9 @@ namespace TrayMenus
             this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLoad.Location = new System.Drawing.Point(83, 55);
+            this.btnLoad.Location = new System.Drawing.Point(83, 59);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(74, 20);
+            this.btnLoad.Size = new System.Drawing.Size(74, 22);
             this.btnLoad.TabIndex = 5;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
@@ -233,9 +233,9 @@ namespace TrayMenus
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(3, 81);
+            this.btnNew.Location = new System.Drawing.Point(3, 87);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(74, 21);
+            this.btnNew.Size = new System.Drawing.Size(74, 23);
             this.btnNew.TabIndex = 6;
             this.btnNew.Text = "New Menu";
             this.btnNew.UseVisualStyleBackColor = true;
@@ -290,7 +290,7 @@ namespace TrayMenus
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882353F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882353F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882353F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(318, 406);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(318, 440);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // txtImage
@@ -299,9 +299,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.txtImage, 2);
-            this.txtImage.Location = new System.Drawing.Point(3, 72);
+            this.txtImage.Location = new System.Drawing.Point(3, 78);
             this.txtImage.Name = "txtImage";
-            this.txtImage.Size = new System.Drawing.Size(282, 21);
+            this.txtImage.Size = new System.Drawing.Size(282, 20);
             this.txtImage.TabIndex = 3;
             this.txtImage.Validating += new System.ComponentModel.CancelEventHandler(this.txtImage_Validating);
             // 
@@ -312,9 +312,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblImage.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.lblImage, 3);
-            this.lblImage.Location = new System.Drawing.Point(3, 46);
+            this.lblImage.Location = new System.Drawing.Point(3, 50);
             this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(312, 23);
+            this.lblImage.Size = new System.Drawing.Size(312, 25);
             this.lblImage.TabIndex = 2;
             this.lblImage.Text = "Image:";
             this.lblImage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -328,7 +328,7 @@ namespace TrayMenus
             this.tableLayoutPanel1.SetColumnSpan(this.lblName, 3);
             this.lblName.Location = new System.Drawing.Point(3, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(312, 23);
+            this.lblName.Size = new System.Drawing.Size(312, 25);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -337,9 +337,9 @@ namespace TrayMenus
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.txtName, 3);
             this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtName.Location = new System.Drawing.Point(3, 26);
+            this.txtName.Location = new System.Drawing.Point(3, 28);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(312, 21);
+            this.txtName.Size = new System.Drawing.Size(312, 20);
             this.txtName.TabIndex = 1;
             this.txtName.Validating += new System.ComponentModel.CancelEventHandler(this.txtName_Validating);
             // 
@@ -350,9 +350,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rdSeperator.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.rdSeperator, 3);
-            this.rdSeperator.Location = new System.Drawing.Point(3, 95);
+            this.rdSeperator.Location = new System.Drawing.Point(3, 103);
             this.rdSeperator.Name = "rdSeperator";
-            this.rdSeperator.Size = new System.Drawing.Size(312, 17);
+            this.rdSeperator.Size = new System.Drawing.Size(312, 19);
             this.rdSeperator.TabIndex = 5;
             this.rdSeperator.TabStop = true;
             this.rdSeperator.Text = "Seperator";
@@ -366,9 +366,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rdSubMenu.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.rdSubMenu, 3);
-            this.rdSubMenu.Location = new System.Drawing.Point(3, 118);
+            this.rdSubMenu.Location = new System.Drawing.Point(3, 128);
             this.rdSubMenu.Name = "rdSubMenu";
-            this.rdSubMenu.Size = new System.Drawing.Size(312, 17);
+            this.rdSubMenu.Size = new System.Drawing.Size(312, 19);
             this.rdSubMenu.TabIndex = 6;
             this.rdSubMenu.TabStop = true;
             this.rdSubMenu.Text = "Sub Menu";
@@ -382,9 +382,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rdShortCut.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.rdShortCut, 3);
-            this.rdShortCut.Location = new System.Drawing.Point(3, 141);
+            this.rdShortCut.Location = new System.Drawing.Point(3, 153);
             this.rdShortCut.Name = "rdShortCut";
-            this.rdShortCut.Size = new System.Drawing.Size(312, 17);
+            this.rdShortCut.Size = new System.Drawing.Size(312, 19);
             this.rdShortCut.TabIndex = 7;
             this.rdShortCut.TabStop = true;
             this.rdShortCut.Text = "Short Cut";
@@ -397,9 +397,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSelectImage.AutoSize = true;
-            this.btnSelectImage.Location = new System.Drawing.Point(291, 72);
+            this.btnSelectImage.Location = new System.Drawing.Point(291, 78);
             this.btnSelectImage.Name = "btnSelectImage";
-            this.btnSelectImage.Size = new System.Drawing.Size(24, 17);
+            this.btnSelectImage.Size = new System.Drawing.Size(24, 19);
             this.btnSelectImage.TabIndex = 4;
             this.btnSelectImage.Text = "...";
             this.btnSelectImage.UseVisualStyleBackColor = true;
@@ -412,9 +412,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label3, 2);
-            this.label3.Location = new System.Drawing.Point(23, 161);
+            this.label3.Location = new System.Drawing.Point(23, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(292, 23);
+            this.label3.Size = new System.Drawing.Size(292, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "Executable:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -424,9 +424,9 @@ namespace TrayMenus
             this.txtExecutable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExecutable.Location = new System.Drawing.Point(23, 187);
+            this.txtExecutable.Location = new System.Drawing.Point(23, 203);
             this.txtExecutable.Name = "txtExecutable";
-            this.txtExecutable.Size = new System.Drawing.Size(262, 21);
+            this.txtExecutable.Size = new System.Drawing.Size(262, 20);
             this.txtExecutable.TabIndex = 9;
             this.txtExecutable.Validating += new System.ComponentModel.CancelEventHandler(this.txtExecutable_Validating);
             // 
@@ -436,9 +436,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.txtParameters, 2);
-            this.txtParameters.Location = new System.Drawing.Point(23, 233);
+            this.txtParameters.Location = new System.Drawing.Point(23, 253);
             this.txtParameters.Name = "txtParameters";
-            this.txtParameters.Size = new System.Drawing.Size(292, 21);
+            this.txtParameters.Size = new System.Drawing.Size(292, 20);
             this.txtParameters.TabIndex = 11;
             this.txtParameters.Validating += new System.ComponentModel.CancelEventHandler(this.txtParameters_Validating);
             // 
@@ -447,9 +447,9 @@ namespace TrayMenus
             this.txtExecuteFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExecuteFolder.Location = new System.Drawing.Point(23, 325);
+            this.txtExecuteFolder.Location = new System.Drawing.Point(23, 353);
             this.txtExecuteFolder.Name = "txtExecuteFolder";
-            this.txtExecuteFolder.Size = new System.Drawing.Size(262, 21);
+            this.txtExecuteFolder.Size = new System.Drawing.Size(262, 20);
             this.txtExecuteFolder.TabIndex = 15;
             this.txtExecuteFolder.Validating += new System.ComponentModel.CancelEventHandler(this.txtExecuteFolder_Validating);
             // 
@@ -462,9 +462,9 @@ namespace TrayMenus
             this.cboShowFlags.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboShowFlags.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cboShowFlags.FormattingEnabled = true;
-            this.cboShowFlags.Location = new System.Drawing.Point(23, 279);
+            this.cboShowFlags.Location = new System.Drawing.Point(23, 303);
             this.cboShowFlags.Name = "cboShowFlags";
-            this.cboShowFlags.Size = new System.Drawing.Size(292, 20);
+            this.cboShowFlags.Size = new System.Drawing.Size(292, 21);
             this.cboShowFlags.TabIndex = 13;
             this.cboShowFlags.SelectedIndexChanged += new System.EventHandler(this.cboShowFlags_SelectedIndexChanged);
             // 
@@ -475,9 +475,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label4, 2);
-            this.label4.Location = new System.Drawing.Point(23, 207);
+            this.label4.Location = new System.Drawing.Point(23, 225);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(292, 23);
+            this.label4.Size = new System.Drawing.Size(292, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Parameters:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -489,9 +489,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label5, 2);
-            this.label5.Location = new System.Drawing.Point(23, 253);
+            this.label5.Location = new System.Drawing.Point(23, 275);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(292, 23);
+            this.label5.Size = new System.Drawing.Size(292, 25);
             this.label5.TabIndex = 12;
             this.label5.Text = "Show Flags:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -503,9 +503,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label6, 2);
-            this.label6.Location = new System.Drawing.Point(23, 299);
+            this.label6.Location = new System.Drawing.Point(23, 325);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(292, 23);
+            this.label6.Size = new System.Drawing.Size(292, 25);
             this.label6.TabIndex = 14;
             this.label6.Text = "Execute In Folder:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -515,9 +515,9 @@ namespace TrayMenus
             this.btnBrowseExecuteFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowseExecuteFolder.Location = new System.Drawing.Point(291, 325);
+            this.btnBrowseExecuteFolder.Location = new System.Drawing.Point(291, 353);
             this.btnBrowseExecuteFolder.Name = "btnBrowseExecuteFolder";
-            this.btnBrowseExecuteFolder.Size = new System.Drawing.Size(24, 17);
+            this.btnBrowseExecuteFolder.Size = new System.Drawing.Size(24, 19);
             this.btnBrowseExecuteFolder.TabIndex = 16;
             this.btnBrowseExecuteFolder.Text = "...";
             this.btnBrowseExecuteFolder.UseVisualStyleBackColor = true;
@@ -530,9 +530,9 @@ namespace TrayMenus
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rdFolder.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.rdFolder, 3);
-            this.rdFolder.Location = new System.Drawing.Point(3, 348);
+            this.rdFolder.Location = new System.Drawing.Point(3, 378);
             this.rdFolder.Name = "rdFolder";
-            this.rdFolder.Size = new System.Drawing.Size(312, 17);
+            this.rdFolder.Size = new System.Drawing.Size(312, 19);
             this.rdFolder.TabIndex = 17;
             this.rdFolder.TabStop = true;
             this.rdFolder.Text = "Folder";
@@ -544,9 +544,9 @@ namespace TrayMenus
             this.txtMenuFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMenuFolder.Location = new System.Drawing.Point(23, 371);
+            this.txtMenuFolder.Location = new System.Drawing.Point(23, 403);
             this.txtMenuFolder.Name = "txtMenuFolder";
-            this.txtMenuFolder.Size = new System.Drawing.Size(262, 21);
+            this.txtMenuFolder.Size = new System.Drawing.Size(262, 20);
             this.txtMenuFolder.TabIndex = 18;
             this.txtMenuFolder.Validating += new System.ComponentModel.CancelEventHandler(this.txtMenuFolder_Validating);
             // 
@@ -554,9 +554,9 @@ namespace TrayMenus
             // 
             this.btnBrowseFolder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowseFolder.Location = new System.Drawing.Point(291, 371);
+            this.btnBrowseFolder.Location = new System.Drawing.Point(291, 403);
             this.btnBrowseFolder.Name = "btnBrowseFolder";
-            this.btnBrowseFolder.Size = new System.Drawing.Size(24, 18);
+            this.btnBrowseFolder.Size = new System.Drawing.Size(24, 20);
             this.btnBrowseFolder.TabIndex = 19;
             this.btnBrowseFolder.Text = "...";
             this.btnBrowseFolder.UseVisualStyleBackColor = true;
@@ -564,9 +564,9 @@ namespace TrayMenus
             // 
             // btnSelectExecutable
             // 
-            this.btnSelectExecutable.Location = new System.Drawing.Point(291, 187);
+            this.btnSelectExecutable.Location = new System.Drawing.Point(291, 203);
             this.btnSelectExecutable.Name = "btnSelectExecutable";
-            this.btnSelectExecutable.Size = new System.Drawing.Size(24, 17);
+            this.btnSelectExecutable.Size = new System.Drawing.Size(24, 18);
             this.btnSelectExecutable.TabIndex = 20;
             this.btnSelectExecutable.Text = "...";
             this.btnSelectExecutable.UseVisualStyleBackColor = true;
@@ -598,9 +598,9 @@ namespace TrayMenus
             // 
             // TrayMenuMainFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 406);
+            this.ClientSize = new System.Drawing.Size(482, 440);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

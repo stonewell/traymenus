@@ -25,6 +25,9 @@ namespace TrayMenus
         private bool hideloadmenu_ = false;
         private bool hideexit_ = false;
 
+        private string notify_icon_file_ = null;
+        private string notify_tooltip_ = null;
+
         private static readonly XmlSerializer xs_ =
             new XmlSerializer(typeof(TrayMenu));
 
@@ -35,27 +38,50 @@ namespace TrayMenus
 
         ContextMenuStrip cmenu = null;
 
-        public TrayMenuMainFrm(string file_name, bool setting, bool hidesetting, bool hideloadmenu, bool hideexit)
+        public TrayMenuMainFrm(string file_name, bool setting, 
+            bool hidesetting, bool hideloadmenu, bool hideexit,
+            string notify_icon_file, string notify_tooltip)
         {
             setting_ = setting;
             menu_file_name_ = file_name;
             hidesetting_ = hidesetting;
             hideloadmenu_ = hideloadmenu;
             hideexit_ = hideexit;
+            notify_icon_file_ = notify_icon_file;
+            notify_tooltip_ = notify_tooltip;
 
             InitializeComponent();
 
             cmenu = new ContextMenuStrip(components);
 
 			notifyIcon1.ContextMenuStrip = cmenu;
-			cmenu.Opening += HandleOpening;
+
+            resetNotifyIcon();
+            
+            cmenu.Opening += HandleOpening;
 			cmenu.ItemClicked += HandleItemClicked;
 			cmenu.Closed += delegate(object sender, ToolStripDropDownClosedEventArgs e) {
-	            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrayMenuMainFrm));
-				notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-				notifyIcon1.Visible = false;	
-				notifyIcon1.Visible = true;	
+                resetNotifyIcon();
 			};
+        }
+
+        private void resetNotifyIcon()
+        {
+            if (notify_tooltip_ != null)
+                notifyIcon1.Text = notify_tooltip_;
+
+            if (notify_icon_file_ != null && System.IO.File.Exists(notify_icon_file_))
+            {
+                System.Drawing.Icon icon = new Icon(notify_icon_file_);
+                notifyIcon1.Icon = icon;
+            }
+            else
+            {
+                System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrayMenuMainFrm));
+                notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            }
+            notifyIcon1.Visible = false;
+            notifyIcon1.Visible = true;
         }
 
         private void HandleItemClicked(object sender, ToolStripItemClickedEventArgs e)
